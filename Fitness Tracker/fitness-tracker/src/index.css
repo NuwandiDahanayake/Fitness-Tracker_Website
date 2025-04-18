@@ -1,0 +1,33 @@
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Body Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  text-align: center;
+}
+
+/* Center the content and set max width */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Basic Layout for Header */
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #555;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}

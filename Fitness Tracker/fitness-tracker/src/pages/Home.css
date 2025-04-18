@@ -1,0 +1,146 @@
+.home-container {
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  height: 100vh;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-family: Courier New, monospace;
+  color: #383838;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: #4b4376;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #4b4376;
+}
+
+.highlight {
+  color: #d2665a;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+  font-family: Bradley Hand, cursive;
+}
+
+.hero-image img {
+  width: 550px;
+  border-radius: 15px;
+}
+
+.btn {
+  background-color: #b82132;
+  font-family: Bradley Hand, cursive;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+.star-icon {
+  position: absolute;
+  top: 220px;
+  left: 150px;
+  font-size: 34px;
+  color: #e69dde;
+  opacity: 0.8;
+}
+
+.star-icon2 {
+  position: absolute;
+  top: 450px;
+  left: 680px;
+  font-size: 24px;
+  color: #e69dde;
+  opacity: 0.8;
+}
+
+.star-icon3 {
+  position: absolute;
+  top: 100px;
+  left: 780px;
+  font-size: 24px;
+  color: #eaa7af;
+  opacity: 0.8;
+}
+
+@keyframes rotateStar {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.star-icon {
+  animation: rotateStar 3s infinite ease-in-out;
+}
+
+.star-icon2 {
+  animation: rotateStar 3s infinite ease-in-out;
+}
+
+.star-icon3 {
+  animation: rotateStar 3s infinite ease-in-out;
+}

@@ -1,0 +1,243 @@
+.dashboard-container {
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.dashboard-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.dashboard-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.dashboard-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.dashboard-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #666;
+}
+
+.workout-btn {
+  background-color: #b82132;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.workout-btn:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+.dashboard-image img {
+  width: 500px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.features-container {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 900px;
+  margin-top: 50px;
+}
+
+.features-container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.features-container p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.setgoals-btn {
+  background-color: #4b4376;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.setgoals-btn:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #4b4376;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #4b4376;
+  color: white;
+}
+
+.clickable-image-container {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 100px auto;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.clickable-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clickable-image-container:hover .clickable-image {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.image-text h2 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.progress-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 90%;
+  margin-top: 50px;
+  padding: 50px 0;
+}
+
+.progress-image img {
+  width: 500px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.progress-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.progress-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.progress-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #666;
+}
+
+.progress-btn {
+  background-color: #d2665a;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.progress-btn:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .progress-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .progress-image img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  .progress-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .dashboard-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dashboard-content {
+    max-width: 100%;
+  }
+
+  .dashboard-image img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  .image-text {
+    font-size: 1.2rem;
+  }
+}
